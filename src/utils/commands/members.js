@@ -135,47 +135,24 @@ const menuCMD = {
         const date = new Date();
         await sock.sendMessage(sender, {
             text: `
-📖  *Olá, bem-vindo(a) ao Super Compras!* 👋 Eu sou o **CSM BOT**, seu assistente virtual. Estou aqui para ajudar você.
-  
-
- ╭━━⪩ PODE SER ÚTIL ⪨━━
+ ╭━━⪩ BEM VINDO/A ⪨━━
 ▢
-▢ • CSM BOT
+▢ • CSM & SUPER COMPRAS IA
 ▢ • Data: ${date.toLocaleDateString("pt-pt")}
 ▢ • Hora: ${date.toLocaleTimeString("pt-pt")}
 ▢ • Versão: ${botVersion}
 ▢
 ╰━━─「🪐」─━━
 
-╭━━⪩ VOCÊ PODE DIGITAR: ⪨━━
+╭━━⪩ DIGITE: ⪨━━
 ▢
-▢ • info
-▢ • como-comprar
-▢ • como-vender
-▢ • sobre-assistente
-▢ • ajuda
+▢ • *info* ou *1* => O QUE É SUPER COMPRAS
+▢ • *como-comprar* ou *2*
+▢ • *como-vender* ou *3*
+▢ • *sobre-assistente* ou *4*
+▢ • *ajuda* ou *5*
 ▢
 ╰━━─「🌌」─━━
-
----
-  
-*Expilicação detalhada dos comandos acima:*
-
-1️⃣  *Sobre a plataforma*
-_Saiba o pouco que precisa saber sobre a plataforma *Super Compras* e suas vantagens._
-
-2️⃣  *🛍️ Como fazer compras?*
-_Descubra o passo a passo para fazer suas compras em qualquer momento._
-  
-3️⃣  *💼 Como vender no Super Compras?*
-_Saiba como cadastrar sua loja e começar a vnder mesmo enquanto dormes._
-  
-4️⃣  *🤖 Sobre o Assistente*
-_Conheça mais sobre mim e como posso te ajudar 24/7._
-  
----
-  
-📌 Para usar, basta digitar o *número* (ex: \`1\`) ou o *nome do comando* (ex: \`Como fazer compras?\`).
   
 💬 Você também pode iniciar a conversa com: *Oi!*, *kmk* ou me chamando de *CSM BOT*, *CSM*.
 `
