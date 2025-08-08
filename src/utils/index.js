@@ -54,7 +54,7 @@ exports.onMessageUpsert = async (sock) => {
         msg.message?.listResponseMessage?.title
 
     if (!texto) {
-        console.log(`Mensagem não textual recebida de ${sender}. Ignorando.`)
+        //console.log(`Mensagem não textual recebida de ${sender}. Ignorando.`)
         return
     }
 

@@ -75,6 +75,7 @@ exports.greetings = [  'oi',
 
   'csm',
   'csm bot',
+  'csm ia',
 
   'Boa tarde',
   'boa tarde!',
@@ -125,7 +126,8 @@ exports.greetings = [  'oi',
   'partiu conversa': 'Partiu! Tô pronto pra trocar ideia!',
   'tamos juntos': 'Sempre! Tamos juntos nessa!',
   'csm bot': 'Presença confirmada!',
-  'csm': 'CSM eh a empresa que me mantem e mantem a plataforma de vendas e compras',
+  'csm ia': 'Inteligencia Artificia da Super Compras e Ciências Sem Mistérios.',
+  'csm': 'CSM é a empresa que me mantem e mantem a plataforma de vendas e compras',
 
   'oy': 'Oy! Tudo nice por aí?',
   'oyy': 'Oyy! Qual é a cena hoje?',
@@ -199,4 +201,4 @@ exports.aboutCMDS = ['quero saber mais',
 
 exports.botVersion = 1.1
 
-exports.GEMINI_API_KEY = 'AIzaSyDiCNopMFQse_vqXfGO5IyOcyTlXwm6emM'
+exports.GEMINI_API_KEY = 'AIzaSyDiCNopMFQse_vqXfGO5IyOcyTlXwm6emM';

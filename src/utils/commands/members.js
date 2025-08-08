@@ -49,7 +49,7 @@ Junte-se a nós e faça parte da nova era do comércio em Niassa!
 }
 
 const howToBeCostumer = {
-    cmd: ['1', '1-', '1 - ', '1-', '1.', '1 . ', '1 .','como fazer compras?', 'como ser cliente?', 'como fazer compras', 'como comprar', 'como-comprar'],
+    cmd: ['1', '1-', '1 - ', '1-', '1.', '1 . ', '1 .','como fazer compras?', 'como fazer compras', 'como comprar', 'como-comprar', 'comprar', 'como-comprar', 'como ser cliente?', 'cliente', 'como ser cliente', 'clientes'],
     handler: async (sock, sender, text) => {
         sock.sendPresenceUpdate('composing', sender);
         await delay(4000);
@@ -108,7 +108,7 @@ Os pedidos dos clientes podem ser acompanhados diretamente pelo site, e você ta
 }
 
 const aboutAssistant = {
-    cmd: ['3', '3.', '3 .', '3 . ', '3-', '3 -', '3 - ', 'Sobre o assistente (eu)', 'sobre-o-assistente ', 'sobre o assistente', 'sobre-assistente'],
+    cmd: ['3', '3.', '3 .', '3 . ', '3-', '3 -', '3 - ', 'Sobre o assistente (eu)', 'sobre-o-assistente ', 'sobre o assistente', 'sobre-assistente', 'assistente', 'ia', 'atendente'],
     handler: async (sock, sender, text) => {
         sock.sendPresenceUpdate('composing', sender)
         await delay(4000)
@@ -120,7 +120,7 @@ Estou aqui para te ajudar com tudo: desde tirar dúvidas sobre como comprar, aco
 
 Disponível 24 horas por dia, 7 dias por semana, estou sempre pronto para te atender com rapidez, clareza e simpatia.
 
-Se tiver alguma dúvida, é só me chamar com: *Oi!* ou *kmk*, ou pelo meu nome: *CSM BOT*, . Tamos juntos!
+Se tiver alguma dúvida, é só me chamar com: *Oi!*, olá! ou *kmk*, ou pelo meu nome: *CSM IA*, . Tamos juntos!
 
 *Importante saber que ainda não sei muita coisa, mas, a cada dia esforços estão sendo feitos de modo que eu fique mais inteligente.*
 `})    }
@@ -144,17 +144,17 @@ const menuCMD = {
 ▢
 ╰━━─「🪐」─━━
 
-╭━━⪩ DIGITE: ⪨━━
+╭━━⪩ ESCOLHA UMA OPÇÃO: ⪨━━
 ▢
-▢ • *info* ou *1* => O QUE É SUPER COMPRAS
-▢ • *como-comprar* ou *2*
-▢ • *como-vender* ou *3*
-▢ • *sobre-assistente* ou *4*
-▢ • *ajuda* ou *5*
+▢ • *1* --> info
+▢ • *2* --> como comprar
+▢ • *3* --> como vender
+▢ • *4* --> sobre o assistente
+▢ • *5* --> ajuda
 ▢
 ╰━━─「🌌」─━━
   
-💬 Você também pode iniciar a conversa com: *Oi!*, *kmk* ou me chamando de *CSM BOT*, *CSM*.
+💬 Você também pode iniciar a conversa com: *Oi!*, *kmk* ou me chamando de *CSM IA*, *CSM*.
 `
         })
     }
