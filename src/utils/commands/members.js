@@ -154,7 +154,7 @@ const menuCMD = {
 ▢
 ╰━━─「🌌」─━━
   
-💬 Você também pode iniciar a conversa com: *Oi!*, *kmk* ou me chamando de *CSM IA*, *CSM*.
+💬 Você também pode iniciar a conversa com: *Oi!*, *Olá!*, *kmk* ou me chamando de *CSM IA*, *CSM*.
 `
         })
     }

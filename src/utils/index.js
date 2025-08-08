@@ -40,6 +40,7 @@ exports.connect = async function () {
 
 exports.onMessageUpsert = async (sock) => {
     sock.ev.on('messages.upsert', async ({ messages }) => {
+      
     const msg = messages[0]
     if (!msg.message || msg.key.fromMe) return
 
@@ -54,7 +55,7 @@ exports.onMessageUpsert = async (sock) => {
         msg.message?.listResponseMessage?.title
 
     if (!texto) {
-        //console.log(`Mensagem não textual recebida de ${sender}. Ignorando.`)
+        console.log(`Mensagem não textual recebida de ${sender}. Ignorando.`)
         return
     }
 
