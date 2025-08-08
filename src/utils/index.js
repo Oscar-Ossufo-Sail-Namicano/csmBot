@@ -25,7 +25,8 @@ exports.connect = async function () {
         const shouldReconnect = (lastDisconnect?.error)?.output?.statusCode !== 401
         console.log('Conexão encerrada. Reconectando...', shouldReconnect)
         if (shouldReconnect) {
-          return sock;
+          exports.connect()
+
         }
       }
     })
@@ -49,7 +50,7 @@ exports.onMessageUpsert = async (sock) => {
         msg.message?.listResponseMessage?.title
 
     if (!texto) {
-        //console.log(`Mensagem não textual recebida de ${sender}. Ignorando.`)
+        console.log(`Mensagem não textual recebida de ${sender}. Ignorando.`)
         return
     }
 

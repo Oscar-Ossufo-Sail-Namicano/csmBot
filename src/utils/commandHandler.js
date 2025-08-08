@@ -6,6 +6,7 @@ exports.commandHandler = async function (sock, text, sender) {
     const command = Object.values(commands).find(cmd => cmd.cmd.includes(text))
 
     if (!command) {
+        // If the command doesn't exists, let IA answer
         sock.sendPresenceUpdate('composing', sender);
         const response = await geminiResponse(text)
         
