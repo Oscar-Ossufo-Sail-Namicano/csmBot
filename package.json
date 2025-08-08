@@ -1,0 +1,19 @@
+{
+  "name": "csm_bot",
+  "version": "1.0.0",
+  "description": "bot for csm sapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "author": "Namicano",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.13.0",
+    "@whiskeysockets/baileys": "^6.7.18",
+    "baileys": "github:WhiskeySockets/Baileys",
+    "dotenv": "^17.2.1",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
