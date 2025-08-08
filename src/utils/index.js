@@ -2,11 +2,15 @@ const { default: makeWASocket, useMultiFileAuthState, fetchLatestBaileysVersion,
 const { Boom } = require('@hapi/boom')
 const qrcode = require('qrcode-terminal')
 
+const fs = require('fs');
+const path = require('path');
+
 const { delay } = require('./general') 
 const { commandHandler } = require('./commandHandler')
 
+const auth_info = path.join(__dirname, '../../auth_info');
 exports.connect = async function () {
-      const { state, saveCreds } = await useMultiFileAuthState('auth_info')
+      const { state, saveCreds } = await useMultiFileAuthState(auth_info)
       const { version } = await fetchLatestBaileysVersion()
     
       const sock = makeWASocket({
